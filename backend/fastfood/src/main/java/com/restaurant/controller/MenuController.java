@@ -1,0 +1,28 @@
+package com.restaurant.controller;
+
+import com.restaurant.model.MenuItem;
+import com.restaurant.repository.MenuItemRepository;
+import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+@RestController
+@RequestMapping("/menu")
+@CrossOrigin(origins = "*");
+public class MenuController {
+
+    private final MenuItemRepository repository;
+
+    public MenuController(MenuItemRepository repository) {
+        this.repository = repository;
+    }
+
+    @GetMapping
+    public List<MenuItem> getMenuItems() {
+        return repository.findAll();
+    }
+
+    @PostMapping
+    public MenuItem addMenuItem(@RequestBody MenuItem item) {
+        return repository.save(item);
+    }
+}
