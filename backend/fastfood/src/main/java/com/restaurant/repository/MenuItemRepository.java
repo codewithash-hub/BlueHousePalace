@@ -1,6 +1,10 @@
 package com.restaurant.repository;
 
 import com.restaurant.model.MenuItem;
+import com.restaurant.model.Order;
+
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {

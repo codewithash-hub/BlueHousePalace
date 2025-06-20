@@ -39,7 +39,7 @@ public class MenuItem {
 
 @Entity
 public class User {
-	@ID
+	@Id
 	@GenerateValue(strategy = GenerateType.IDENTITY)
 	private Long id;
 	private String username;
@@ -90,17 +90,6 @@ public class CartItem {
     private User user;
 }
 
-@Entity
-public class Order {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @ManyToOne
-    private User user;
-    private String status;
-    private double total;
-    private LocalDateTime createdAt;
-}
 
 
 

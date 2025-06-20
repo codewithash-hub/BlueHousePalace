@@ -7,7 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/menu")
-@CrossOrigin(origins = "*");
+@CrossOrigin(origins = "*")
 public class MenuController {
 
     private final MenuItemRepository repository;
@@ -26,3 +26,12 @@ public class MenuController {
         return repository.save(item);
     }
 }
+
+// @RestController
+// public class HelloController {
+//     @GetMapping("/")
+//     public String home() {
+//         return "FastFood API is running!";
+//     }
+// }
+
