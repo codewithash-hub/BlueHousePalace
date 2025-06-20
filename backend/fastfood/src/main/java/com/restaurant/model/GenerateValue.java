@@ -1,7 +1,9 @@
 package com.restaurant.model;
 
+import jakarta.persistence.GenerationType;
+
 public @interface GenerateValue {
 
-    String strategy();
+    GenerationType strategy();
 
 }

@@ -1,7 +1,7 @@
-package com.restaurant.controller;
+package com.restaurant.repository;
 
 import com.restaurant.model.MenuItem;
-import com.restaurant.repository.MenuItemRepository;
+
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
