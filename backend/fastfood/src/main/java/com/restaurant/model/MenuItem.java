@@ -10,6 +10,7 @@ public class MenuItem {
     private Long id;
     private String name;
     private double price;
+    private String imageUrl;
 
     // Getters and Setters
     public Long getId() {
@@ -34,6 +35,14 @@ public class MenuItem {
     
     public void setPrice(double price) {
     	this.price = price;
+    }
+
+    public String getImageUrl() {
+    	return imageUrl;
+    }
+    
+    public void setImageUrl(String imageUrl) {
+    	this.imageUrl = imageUrl;
     }
 }
 
